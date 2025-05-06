@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: Inter;
+  src: url('/fonts/Inter-VariableFont_slnt,wght.ttf');
+}
+
+@theme {
+  --color-social-green: hsl(75, 94%, 57%);
+  /* - White: hsl(0, 0%, 100%) */
+  --color-social-grey-700: hsl(0, 0%, 20%);
+  --color-social-grey-800: hsl(0, 0%, 12%);
+  --color-social-grey-900: hsl(0, 0%, 8%);
+
+  --default-font-family: 'Inter', 'sans-serif'
+}
