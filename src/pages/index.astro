@@ -1,5 +1,8 @@
 ---
 import '@styles/global.css';
+import { Image } from 'astro:assets';
+import avatar from '@assets/images/avatar-tyler.jpg';
+import SocialLink from '@components/SocialLink.astro';
 ---
 
 <html lang="en">
@@ -22,11 +25,32 @@ import '@styles/global.css';
 			}
 		</style>
 	</head>
-	<body>
-		<h1 class="text-2xl font-bold text-green-600">Astro</h1>
-		<p class="text-xl font-light text-amber-500">Hello world</p>
-		Jessica Randall London, United Kingdom "Front-end developer and avid reader."
-		GitHub Frontend Mentor LinkedIn Twitter Instagram
+	<body class="bg-social-grey-900">
+		<main class="flex h-svh flex-col items-center justify-center">
+			<article class="bg-social-grey-800 flex flex-col gap-4 rounded-xl p-6">
+				<Image
+					src={avatar}
+					alt={'avatar image'}
+					height={64}
+					class="mx-auto rounded-full"
+				/>
+				<div class="text-center">
+					<h1 class="text-2xl font-bold text-white">Tyler Mykkanen</h1>
+					<h2 class="text-social-green font-bold">Albert Lea, MN</h2>
+					<p class="font-light text-white">
+						"Front-end developer and avid reader."
+					</p>
+				</div>
+				<ul class="flex flex-col gap-4">
+					<SocialLink title="Github" url="#" />
+					<SocialLink title="Frontend Mentor" url="#" />
+					<SocialLink title="LinkedIn" url="#" />
+					<SocialLink title="Twitter" url="#" />
+					<SocialLink title="Instagram" url="#" />
+				</ul>
+			</article>
+		</main>
+
 		<div class="attribution">
 			Challenge by <a
 				href="https://www.frontendmentor.io?ref=challenge"
