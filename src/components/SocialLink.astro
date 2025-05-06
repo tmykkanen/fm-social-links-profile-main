@@ -7,6 +7,10 @@ interface Props {
 const { title, url } = Astro.props as Props;
 ---
 
-<li class="bg-social-grey-700 rounded-sm p-3 text-center">
-	<a href={url} class="text-white">{title}</a>
+<li class="text-center">
+	<a
+		href={url}
+		class="hover:bg-social-green bg-social-grey-700 hover:text-social-grey-900 block rounded-sm p-3 text-white"
+		>{title}</a
+	>
 </li>
