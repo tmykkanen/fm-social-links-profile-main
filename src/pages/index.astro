@@ -12,32 +12,26 @@ import SocialLink from '@components/SocialLink.astro';
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Frontend Mentor | Social links profile</title>
-
-		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-
-		<style>
-			.attribution {
-				font-size: 11px;
-				text-align: center;
-			}
-			.attribution a {
-				color: hsl(228, 45%, 44%);
-			}
-		</style>
 	</head>
-	<body class="bg-social-grey-900">
-		<main class="flex h-svh flex-col items-center justify-center">
-			<article class="bg-social-grey-800 flex flex-col gap-4 rounded-xl p-6">
+	<body
+		class="bg-social-grey-900 flex h-svh flex-col items-center justify-center gap-10"
+	>
+		<main class="">
+			<article
+				class="bg-social-grey-800 flex flex-col rounded-xl p-6 md:min-w-[384px] md:p-10"
+			>
 				<Image
 					src={avatar}
 					alt={'avatar image'}
 					height={96}
-					class="mx-auto rounded-full"
+					class="mx-auto mb-6 rounded-full"
 				/>
 				<div class="text-center">
-					<h1 class="text-2xl font-bold text-white">Tyler Mykkanen</h1>
-					<h2 class="text-social-green font-bold">Albert Lea, MN</h2>
-					<p class="font-light text-white">
+					<h1 class="text-xl text-white">Tyler Mykkanen</h1>
+					<h2 class="text-social-green mb-6 text-sm font-bold">
+						Albert Lea, MN
+					</h2>
+					<p class="mb-6 text-sm font-light text-white">
 						"Front-end developer and avid reader."
 					</p>
 				</div>
@@ -50,12 +44,17 @@ import SocialLink from '@components/SocialLink.astro';
 				</ul>
 			</article>
 		</main>
-
-		<div class="attribution">
-			Challenge by <a
-				href="https://www.frontendmentor.io?ref=challenge"
-				target="_blank">Frontend Mentor</a
-			>. Coded by <a href="https://github.com/tmykkanen">Tyler Mykkanen</a>.
-		</div>
+		<footer>
+			<div class="text-social-grey-700 text-sm">
+				Challenge by <a
+					href="https://www.frontendmentor.io?ref=challenge"
+					target="_blank"
+					class="hover:text-social-green underline">Frontend Mentor</a
+				>. Coded by <a
+					href="https://github.com/tmykkanen"
+					class="hover:text-social-green underline">Tyler Mykkanen</a
+				>.
+			</div>
+		</footer>
 	</body>
 </html>
