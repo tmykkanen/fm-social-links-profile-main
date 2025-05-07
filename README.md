@@ -44,6 +44,7 @@ Users should be able to:
 ### What I learned
 - Improved skill at setting up astro project for rapid development.
 - I learned how to stage changes to individual commits for a more granular development history.
+- I learned that `display:block` is necessary to make an `<a>` element take up all the space of the `<li>` container (i.e. act like a button).
 
 ### Continued development
 - I'd like to get more efficient at project setup / consistent settings.
